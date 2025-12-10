@@ -3,8 +3,10 @@
 #include "stack.h"
 #include <string.h>
 
+
 Stack * create_stack(int initial_size)
 {
+	printf("Welcome to Linux!\n");
 	Stack * s = (Stack *)malloc(sizeof(Stack));
 	s->contents = (int *)malloc(initial_size*sizeof(Item));
 	s->top=0;
